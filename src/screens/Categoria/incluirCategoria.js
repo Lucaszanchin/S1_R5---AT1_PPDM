@@ -7,7 +7,6 @@ import api from "../../api/api";
 export default function CategoriaScreenIncluir() {
   const navigation = useNavigation();
 
-  // 🛠️ CORREÇÃO CRÍTICA: Os estados DEVEM começar como strings vazias ("")
   // Evita o erro de passar valor 'undefined' para o componente TextInput
   const [nomeCategoria, setNomeCategoria] = useState("");
   const [descricaoCategoria, setDescricaoCategoria] = useState("");
